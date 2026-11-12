@@ -1,0 +1,26 @@
+{
+  "name": "pv-auto",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Procese verbale predare-primire autovehicule (individual + pool car)",
+  "scripts": {
+    "build": "node scripts/build-web.mjs",
+    "serve": "npx --yes http-server www -p 8080 -c-1",
+    "sync": "npm run build && npx cap sync android"
+  },
+  "dependencies": {
+    "@capacitor/android": "^8.6.0",
+    "@capacitor/camera": "^8.2.6",
+    "@capacitor/core": "^8.6.0",
+    "@capacitor/filesystem": "^8.1.5",
+    "@capacitor/share": "^8.0.3",
+    "capacitor-email-composer": "^8.0.0",
+    "jspdf": "^4.2.1",
+    "jspdf-autotable": "^5.0.9"
+  },
+  "devDependencies": {
+    "@capacitor/cli": "^8.6.0",
+    "dejavu-fonts-ttf": "^2.37.3",
+    "esbuild": "^0.28.2"
+  }
+}
